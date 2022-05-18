@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CvMei_2204271α</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="statusTip">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>515</x>
+      <y>560</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>641</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Drop file to process here.</string>
+    </property>
+    <widget class="QLabel" name="viewLabel">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>480</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::WinPanel</enum>
+     </property>
+     <property name="text">
+      <string>No signal</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_left1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>410</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>左90度</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_right1">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>410</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>右90度</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_horizontal1">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>410</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>水平翻转</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_vertically1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>410</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>垂直翻转</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Save1">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>460</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存档案</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_faceregonize1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>460</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>人脸探测</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_reload1">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>460</y>
+       <width>80</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>档案重开</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_zoom1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>500</y>
+       <width>421</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>200</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_zoom1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>500</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>缩放：</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <widget class="QMenu" name="menuFile1">
+    <property name="title">
+     <string>档案</string>
+    </property>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_H"/>
+    <addaction name="action_J"/>
+    <addaction name="action_B"/>
+    <addaction name="action_Y"/>
+    <addaction name="action_G"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_CvMei"/>
+    <addaction name="action_Qt"/>
+   </widget>
+   <addaction name="menuFile1"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar1">
+   <property name="statusTip">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>555</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>555</height>
+    </size>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="sideBar1">
+    <widget class="QLabel" name="label_light1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>亮度：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_light2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_light1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>-300</number>
+     </property>
+     <property name="maximum">
+      <number>300</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_binary1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>二值化：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_binary2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>70</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_binary1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>255</number>
+     </property>
+     <property name="value">
+      <number>128</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_contrast1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>对比度：</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_contrast1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_saturation1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>饱和度：</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_saturation1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_red1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>红色值：</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_red1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_green1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>绿色值：</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_green1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_blue1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>56</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>蓝色值：</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_blue1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="action_Open">
+   <property name="text">
+    <string>打开档案(&amp;O)</string>
+   </property>
+   <property name="toolTip">
+    <string>打开档案</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="text">
+    <string>灰度化(&amp;H)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_J">
+   <property name="text">
+    <string>均值滤波(&amp;J)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="text">
+    <string>边缘探测(&amp;B)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="text">
+    <string>边缘与原图(&amp;Y)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_G">
+   <property name="text">
+    <string>伽马变换(&amp;G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>保存档案(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_CvMei">
+   <property name="text">
+    <string>关于CvMei</string>
+   </property>
+  </action>
+  <action name="action_Qt">
+   <property name="text">
+    <string>关于Qt</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
